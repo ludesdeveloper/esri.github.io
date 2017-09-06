@@ -1788,8 +1788,8 @@
           className: 'params',
           begin: /\(/, end: /\)/, endsParent: true,
           keywords: SWIFT_KEYWORDS,
-          contains: ['self', NUMBERS, QUOTE_STRING_MODE, hljs.C_BLOCK_COMMENT_MODE, { begin: ':' } // relevance booster
-          ],
+          contains: ['self', NUMBERS, QUOTE_STRING_MODE, hljs.C_BLOCK_COMMENT_MODE, { begin: ':' // relevance booster
+          }],
           illegal: /["']/
         }],
         illegal: /\[|%/
@@ -2001,8 +2001,8 @@
     var TEMPLATE_VARIABLES = {
       className: 'template-variable',
       variants: [{ begin: '\{\{', end: '\}\}' }, // jinja templates Ansible
-      { begin: '%\{', end: '\}' } // Ruby i18n
-      ]
+      { begin: '%\{', end: '\}' // Ruby i18n
+      }]
     };
     var STRING = {
       className: 'string',
