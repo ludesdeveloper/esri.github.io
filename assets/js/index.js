@@ -6,9 +6,9 @@
 /******/ 	function __webpack_require__(moduleId) {
 /******/
 /******/ 		// Check if module is in cache
-/******/ 		if(installedModules[moduleId])
+/******/ 		if(installedModules[moduleId]) {
 /******/ 			return installedModules[moduleId].exports;
-/******/
+/******/ 		}
 /******/ 		// Create a new module (and put it into the cache)
 /******/ 		var module = installedModules[moduleId] = {
 /******/ 			i: moduleId,
@@ -68,7 +68,7 @@
 /************************************************************************/
 /******/ ([
 /* 0 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 /*! highlight.js v9.6.0 | BSD3 License | git.io/hljslicense */
 (function (factory) {
@@ -2052,9 +2052,9 @@
   return hljs;
 });
 
-/***/ },
+/***/ }),
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, exports, __webpack_require__) {
 
 (function (global, factory) {
    true ? module.exports = factory() :
@@ -3437,11 +3437,12 @@ return calciteWeb;
 })));
 
 
-/***/ },
+/***/ }),
 /* 2 */
-/***/ function(module, exports, __webpack_require__) {
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_calcite_web__ = __webpack_require__(1);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_calcite_web___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_calcite_web__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__lib_highlight_pack_js__ = __webpack_require__(0);
@@ -3455,6 +3456,6 @@ window.calcite = __WEBPACK_IMPORTED_MODULE_0_calcite_web___default.a;
 __WEBPACK_IMPORTED_MODULE_1__lib_highlight_pack_js___default.a.initHighlighting();
 window.hljs = __WEBPACK_IMPORTED_MODULE_1__lib_highlight_pack_js___default.a;
 
-/***/ }
+/***/ })
 /******/ ]);
 //# sourceMappingURL=index.js.map
